@@ -1,0 +1,13 @@
+body {
+    background-color: #eee;
+}
+h1 {
+    position: fixed;
+    width: 100%;
+    top: 50%;
+    margin-top: -20px;
+    height: 40px;
+    font-size: 36px;
+    text-align: center;
+    font-family: monospace;
+}
