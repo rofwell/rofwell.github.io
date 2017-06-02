@@ -90,3 +90,31 @@ header h1 {
     text-align: left;
     display: none;
 }
+
+.project .playnow {
+    height: 26px;
+    border: 2px solid black;
+    background-color: lightsteelblue;
+    border-bottom: none;
+    float: right;
+    width: 10%;
+    font-size: 18px;
+    transition: width 0.4s;
+    overflow: hidden;
+}
+
+.project:hover .playnow {
+    width: 100%;
+}
+
+.project:hover .playnow:before {
+    content: "view code"; 
+}
+
+.project.playnow .playnow {
+    background-color: lightgreen;
+}
+
+.project.playnow:hover .playnow:before {
+    content: "play online";
+}
