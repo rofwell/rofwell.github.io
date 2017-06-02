@@ -115,6 +115,8 @@ header h1 {
     color: white;
 }
 
+
+/*    VIEW CODE     */
 .project .playnow:before {
     content: "view code"; 
 }
@@ -131,6 +133,7 @@ header h1 {
     background-color: #5493b9;
 }
 
+/*      PLAY ONLINE     */
 .project.playable .playnow {
     background-color: #5fce8c;
 }
@@ -145,6 +148,23 @@ header h1 {
 
 .project.playable .playnow:active {
     background-color: #53b57b;
+}
+
+/*      VIEW ONLINE     */
+.project.viewable .playnow {
+    background-color: #885fbb;
+}
+
+.project.viewable .playnow:before {
+    content: "view online";
+}
+
+.project.viewable .playnow:hover {
+    background-color: #996bd2;
+}
+
+.project.viewable .playnow:active {
+    background-color: #7853a7;
 }
 
 .intro {
