@@ -64,8 +64,8 @@ header h1 {
 
 .project .image {
     flex: 2;
-    background: url('img/black.png');
-    background-size: cover;
+    background-image: url('img/black.png');
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     order: 1;
