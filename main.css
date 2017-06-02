@@ -21,6 +21,7 @@ header {
     border-bottom: 3px solid #537384;
     background-color: #5fa4ce;
     color: #eee;
+    z-index: 5;
 }
 
 header h1 {
@@ -45,14 +46,9 @@ header h1 {
     width: 600px;
     margin: 20px auto;
     padding: 20px;
-    cursor: pointer;
-    border: 2px dashed transparent;
-
-    transition: border ease 0.3s;
 }
 
 .project:hover {
-    border: 2px dashed #537384;
 }
 
 .project a {
@@ -72,18 +68,24 @@ header h1 {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    order: 1;
+    display: flex;
+
 }
 
 .project .info {
     margin: auto;
+    order: 2;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .project h1 {
     margin: auto;
-    margin-top: 5px;
     text-align: center;
     font-size: 56px;
-    padding: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .project h2 {
@@ -94,35 +96,32 @@ header h1 {
 }
 
 .project .playnow {
-    height: 6px;
+    height: 42px;
+    padding: 10px;
     background-color: #5fa4ce;
-    float: right;
+    opacity: 0.5;
     width: 100%;
     font-size: 18px;
-    transition: height 0.2s, padding 0.2s;
-    transition-timing-function: ease;
     overflow: hidden;
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
+    margin: auto;
+    text-align: center;
+    transition: opacity ease 0.2s;
 }
 
-.project:hover .playnow {
-    height: 42px;
-    padding: 10px;
-}
-
-.project:hover .playnow:before {
+.project .playnow:before {
     content: "view code"; 
 }
 
-.project.playnow {
-    order: -2;
+.project:hover .playnow {
+    opacity: 1;
 }
 
 .project.playnow .playnow {
     background-color: #5fce8c;
 }
 
-.project.playnow:hover .playnow:before {
+.project.playnow .playnow:before {
     content: "play online";
 }
