@@ -131,18 +131,39 @@ header h1 {
     background-color: #5493b9;
 }
 
-.project.playnow .playnow {
+.project.playable .playnow {
     background-color: #5fce8c;
 }
 
-.project.playnow .playnow:before {
+.project.playable .playnow:before {
     content: "play online";
 }
 
-.project.playnow .playnow:hover {
+.project.playable .playnow:hover {
     background-color: #66d894
 }
 
-.project.playnow .playnow:active {
+.project.playable .playnow:active {
     background-color: #53b57b;
+}
+
+.intro {
+    width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.intro h1 {
+    font-size: 140px;
+    flex: 2;
+}
+
+.intro h2 {
+    flex: 1;
+    font-size: 36px;
+    /*font-family: 'Raleway', sans-serif;*/
+    text-transform: none;
 }
