@@ -7,7 +7,6 @@
 
 body {
     background-color: #ccc;
-    padding: 10px;
     text-transform: lowercase;
     background: url('img/background.png');
 }
@@ -31,24 +30,23 @@ header h1 {
 }
 
 .projects {
-    display: flex;
+    display: block;
     width: 100%;
     margin-top: 60px;
-    padding: 20px;
     flex-wrap: wrap;
     justify-content: center;
     align-content: flex-start;
     text-align: center;
+    padding-top: 20px;
 }
 
 .project {
     flex: 0 1 300px;
-    height: 250px;
-    width: 300px;
-    padding: 10px;
+    height: 500px;
+    width: 600px;
+    margin: 0 auto;
     margin-bottom: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
+    padding: 20px;
     cursor: pointer;
     border: 2px dashed transparent;
 
@@ -86,13 +84,15 @@ header h1 {
     margin: auto;
     margin-top: 5px;
     text-align: center;
-    font-size: 32px;
+    font-size: 56px;
     padding: 5px;
 }
 
 .project h2 {
     text-align: left;
-    display: none;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    text-transform: initial;
 }
 
 .project .playnow {
