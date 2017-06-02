@@ -7,7 +7,7 @@
 
 body {
     background-color: #ccc;
-    text-transform: lowercase;
+    /*text-transform: lowercase;*/
     background: url('img/background.png');
 }
 
@@ -84,12 +84,16 @@ header h1 {
 .project h1 {
     margin: auto;
     text-align: center;
-    font-size: 56px;
+    font-size: 50px;
     margin-top: 20px;
-    margin-bottom: 20px;
 }
 
 .project h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.project p {
     text-align: left;
     font-size: 20px;
     font-family: 'Raleway', sans-serif;
@@ -174,6 +178,7 @@ header h1 {
     text-align: center;
     display: flex;
     flex-direction: column;
+    text-transform: none;
 }
 
 .intro h1 {
@@ -185,5 +190,4 @@ header h1 {
     flex: 1;
     font-size: 36px;
     /*font-family: 'Raleway', sans-serif;*/
-    text-transform: none;
 }
