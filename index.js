@@ -1,3 +1,5 @@
 $(document).ready(function() {
-	$('.container').fullpage();
+	$('.container').fullpage({
+        'navigation':true
+    });
 });
