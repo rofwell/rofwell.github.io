@@ -1,6 +1,5 @@
 * {
     box-sizing: border-box;
-    font-family: 'Josefin Slab', sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -9,6 +8,7 @@ body {
     background-color: #ccc;
     /*text-transform: lowercase;*/
     background: url('img/background.png');
+    font-family: 'Josefin Slab', sans-serif;
 }
 
 header {
@@ -91,10 +91,11 @@ header h1 {
 }
 
 .project p {
-    text-align: left;
+    text-align: justify;
     font-size: 20px;
     font-family: 'Raleway', sans-serif;
     text-transform: initial;
+    line-height: 25px;
 }
 
 .project .playnow {
